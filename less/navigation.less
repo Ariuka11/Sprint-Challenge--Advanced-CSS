@@ -45,7 +45,17 @@ header{
           }
     }
     span{
-        
         .custom-layout();
+        @media @phone {
+            flex-wrap: wrap;
+        }
+        img{
+            @media @phone{
+                margin-left: 2%;
+                width: 100%;
+                height: 110px;
+                border-radius: 10px;
+            }
+        }
     }
 }
