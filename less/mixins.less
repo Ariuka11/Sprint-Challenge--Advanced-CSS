@@ -1,1 +1,30 @@
-// Mixins Here
+// Mixins Here.
+.custom-layout(@justify: center, @align: center){
+    display: flex;
+    justify-content: @justify;  
+    align-items: @align;
+}
+.custom-btn(@width:80px,@height:35px, @font:2rem,){
+    background: @btn-bg-color;
+    width:@width;
+    height:@height;
+    border-radius: 5px;
+    color:@border-real;
+    font-size: @font;
+    text-align: center;
+    padding: 2%;
+    
+    &:hover{
+        background: @border-real;
+        color: @btn-bg-color;
+    }
+    &:active{
+        background: @waterloo;
+        box-shadow: 0 5px @ebony-clay;
+        transform: translateY(4px);
+    }
+
+
+}
+
+

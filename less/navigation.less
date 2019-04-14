@@ -1,1 +1,51 @@
 // Navigation code here
+header{
+    width: 100%;
+    border: 0px solid @nav-border;
+   
+    
+    .top{
+        background:@nav-bg;
+    }
+    h1{
+        text-align: center;
+        font-size: 4rem;
+        padding-top: 2%;
+        
+    }
+    nav{
+      
+        .custom-layout(center, center);
+        font-size: 1.8rem;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        @media @phone {
+            .custom-layout(space-around, center);
+            font-size: 1.5rem;
+        }
+        @media @tablet {
+            .custom-layout(space-around, center);
+            font-size: 1.6rem;
+        }
+               
+        a{
+            margin-left: 2%;
+            text-decoration: none;
+            color: @nav-font;
+            font-weight: bold;
+            &:hover{
+                background: @nav-font;
+                color: @nav-bg;
+            }
+            &:active{
+                background: @waterloo;
+                box-shadow: 0 5px @porcelain;
+                transform: translateY(4px);
+            }
+          }
+    }
+    span{
+        
+        .custom-layout();
+    }
+}
